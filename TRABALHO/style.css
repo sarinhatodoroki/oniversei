@@ -1,0 +1,146 @@
+/* Reset e configurações globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #0900b3;
+    background: linear-gradient(180deg, rgba(9, 0, 179, 1) 0%, rgba(143, 4, 194, 1) 52%, rgba(255, 0, 247, 1) 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    padding-bottom: 50px;
+}
+
+/* Estilo do cabeçalho */
+.top-image {
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.top-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilo do carrossel */
+.swiper {
+    width: 90%;
+    max-width: 1400px;
+    height: auto;
+    padding: 30px 0 50px;
+}
+
+.swiper-slide {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.swiper-slide:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.swiper-slide h3 {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+/* Navegação do carrossel */
+.swiper-button-next, 
+.swiper-button-prev {
+    color: white !important;
+    background: rgba(255, 255, 255, 0.2);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.swiper-button-next:hover, 
+.swiper-button-prev:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-size: 1.5rem !important;
+    font-weight: bold;
+}
+
+.swiper-pagination-bullet {
+    background: white !important;
+    opacity: 0.6 !important;
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    transform: scale(1.2);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .swiper {
+        width: 95%;
+        padding: 20px 0 40px;
+    }
+    
+    .swiper-slide {
+        padding: 10px;
+    }
+    
+    .swiper-slide h3 {
+        font-size: 1.1rem;
+    }
+    
+    .top-image img {
+        max-height: 180px;
+    }
+}
