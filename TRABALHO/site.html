@@ -5,47 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Carrossel de Vídeos Premium</title>
+    <title>Meus Vídeos por Tópicos</title>
 </head>
 <body>
-    <!-- Cabeçalho com imagem -->
+    <!-- Cabeçalho -->
     <header class="top-image">
-        <img src="banner-topo.jpg" alt="Banner do Carrossel">
+        <img src="banner-topo.jpg" alt="Banner Principal">
     </header>
 
-    <!-- Carrossel 1 - Tópico 1 -->
-    <div class="swiper mySwiper1">
-        <div class="swiper-wrapper">
-            <!-- Os cards serão inseridos via JavaScript -->
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
+    <main class="container">
+        <!-- Carrossel 1 - Música -->
+        <section class="topic-section">
+            <h2 class="topic-title">🎵 Música</h2>
+            <div class="swiper musicSwiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-    <!-- Carrossel 2 - Tópico 2 -->
-    <div class="swiper mySwiper2">
-        <div class="swiper-wrapper">
-            <!-- Os cards serão inseridos via JavaScript -->
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
+        <!-- Carrossel 2 - Tecnologia -->
+        <section class="topic-section">
+            <h2 class="topic-title">💻 Tecnologia</h2>
+            <div class="swiper techSwiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-    <!-- Carrossel 3 - Tópico 3 -->
-    <div class="swiper mySwiper3">
-        <div class="swiper-wrapper">
-            <!-- Os cards serão inseridos via JavaScript -->
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-    </div>
+        <!-- Carrossel 3 - Games -->
+        <section class="topic-section">
+            <h2 class="topic-title">🎮 Games</h2>
+            <div class="swiper gamesSwiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
 
-    <!-- Rodapé -->
+        <!-- Carrossel 4 - Educação -->
+        <section class="topic-section">
+            <h2 class="topic-title">📚 Educação</h2>
+            <div class="swiper eduSwiper">
+                <div class="swiper-wrapper"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
     <footer>
-        <p>© 2023 Meu Carrossel de Vídeos</p>
+        <p>© 2023 Meus Vídeos Organizados</p>
     </footer>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
